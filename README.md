@@ -1,3 +1,4 @@
+
 # 💰 Expense Tracker
 
 A sleek, modern, and minimalistic web application designed to track and manage your daily financial transactions with full bilingual support (English & Arabic).
@@ -36,13 +37,11 @@ A sleek, modern, and minimalistic web application designed to track and manage y
 └── script.js        # Core logic, array handling, and translation dictionaries
 ```
 
-🚀 How to Run Locally
-
-    Clone the repository:
+🚀 How to Run Locally:
+	1. Clone the repository:
     
-    `git clone [https://github.com/YOUR_USERNAME/YOUR_REPOSITORY_NAME.git](https://github.com/YOUR_USERNAME/YOUR_REPOSITORY_NAME.git)`
- 
-    Navigate into the project directory:
-   `cd YOUR_REPOSITORY_NAME`
-
-    Open index.html in your favorite web browser or use the Live Server extension in VS Code.
+    git clone https://github.com/M7mdJbr/Expense-Tracker
+ --
+ 2.   Navigate into the project directory:
+   `cd 	Expense-Tracker`
+3. Open index.html in your favorite web browser or use the Live Server extension in VS Code.
