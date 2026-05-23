@@ -40,8 +40,10 @@ A sleek, modern, and minimalistic web application designed to track and manage y
 🚀 How to Run Locally:
 	1. Clone the repository:
     
-    git clone https://github.com/M7mdJbr/Expense-Tracker
- --
- 2.   Navigate into the project directory:
+    `git clone https://github.com/M7mdJbr/Expense-Tracker`
+
+	2. Navigate into the project directory:
+	
    `cd 	Expense-Tracker`
-3. Open index.html in your favorite web browser or use the Live Server extension in VS Code.
+   
+	3. Open index.html in your favorite web browser or use the Live Server extension in VS Code.
