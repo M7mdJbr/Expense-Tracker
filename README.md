@@ -36,14 +36,3 @@ A sleek, modern, and minimalistic web application designed to track and manage y
 ├── style.css        # Minimalistic custom styling, variables, and animations
 └── script.js        # Core logic, array handling, and translation dictionaries
 ```
-
-🚀 How to Run Locally:
-	1. Clone the repository:
-    
-    `git clone https://github.com/M7mdJbr/Expense-Tracker`
-
-	2. Navigate into the project directory:
-	
-   `cd 	Expense-Tracker`
-   
-	3. Open index.html in your favorite web browser or use the Live Server extension in VS Code.
