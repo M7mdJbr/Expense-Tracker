@@ -39,9 +39,10 @@ A sleek, modern, and minimalistic web application designed to track and manage y
 🚀 How to Run Locally
 
     Clone the repository:
-    ```git clone [https://github.com/YOUR_USERNAME/YOUR_REPOSITORY_NAME.git](https://github.com/YOUR_USERNAME/YOUR_REPOSITORY_NAME.git)```
+    
+    `git clone [https://github.com/YOUR_USERNAME/YOUR_REPOSITORY_NAME.git](https://github.com/YOUR_USERNAME/YOUR_REPOSITORY_NAME.git)`
  
     Navigate into the project directory:
-   ```cd YOUR_REPOSITORY_NAME```
+   `cd YOUR_REPOSITORY_NAME`
 
     Open index.html in your favorite web browser or use the Live Server extension in VS Code.
