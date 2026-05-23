@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl" id="app-html">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>متتبع المصروفات | Expense Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="lang-switcher-container">
+        <button id="lang-btn" class="lang-btn">English</button>
+    </div>
+
+    <main class="app-container">
+        <header class="app-header">
+            <h1 id="lng-main-title">متتبع المصروفات</h1>
+        </header>
+
+        <section class="dashboard">
+            <div class="balance-card">
+                <span id="lng-total-balance-label" class="label">الرصيد المتبقي الكلي</span>
+                <h2 id="balance" class="balance-amount">0.00 <span id="lng-currency" class="currency">جنيه</span></h2>
+            </div>
+            
+            <div class="flow-cards">
+                <div class="card income">
+                    <span id="lng-income-label" class="card-label">إجمالي الدخل (+)</span>
+                    <p id="income" class="amount-value">0.00</p>
+                </div>
+                <div class="card expense">
+                    <span id="lng-expense-label" class="card-label">إجمالي المصروفات (-)</span>
+                    <p id="expense" class="amount-value">0.00</p>
+                </div>
+            </div>
+        </section>
+
+        <div class="main-content-grid">
+            
+            <section class="form-section">
+                <h3 id="lng-form-title">تسجيل معاملة جديدة</h3>
+                <form id="transaction-form">
+                    <div class="form-group">
+                        <label id="lng-desc-label" for="text">الوصف / البيان</label>
+                        <input type="text" id="text" placeholder="مثلاً: راتب الشهر، غداء، فاتورة النت..." required autocomplete="off">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label id="lng-amount-label" for="amount">المبلغ</label>
+                        <input type="number" id="amount" step="0.01" placeholder="0.00" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label id="lng-type-label">نوع المعاملة</label>
+                        <div class="radio-group">
+                            <label class="radio-label income-radio">
+                                <input type="radio" name="transaction-type" value="income" checked>
+                                <span id="lng-radio-income">دخل (+)</span>
+                            </label>
+                            <label class="radio-label expense-radio">
+                                <input type="radio" name="transaction-type" value="expense">
+                                <span id="lng-radio-expense">مصروف (-)</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <button type="submit" id="lng-submit-btn" class="submit-btn">إضافة إلى الدفتر</button>
+                </form>
+            </section>
+
+            <section class="history-section">
+                <h3 id="lng-history-title">سجل المعاملات اليومية</h3>
+                <ul id="list" class="transactions-list"></ul>
+            </section>
+
+        </div>
+    </main>
+
+    <footer class="app-footer">
+        <p><span id="lng-footer-text">4th Javascript project by </span> <span class="ibnJabr">M7mdJbr</span></p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
