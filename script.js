@@ -107,7 +107,7 @@ document.getElementById("lang-btn").addEventListener("click", () => {
 
 const updateLocalStorage = () => {
   localStorage.setItem("transactions", JSON.stringify(transactions));
-}
+};
 
 const gettingData = () => {
   let title = processTitle.value;
@@ -181,3 +181,14 @@ addProcess.addEventListener("click", function (event) {
 });
 
 changeLanguage("ar");
+
+if ("serviceWorker" in navigator) {
+  window.addEventListener("load", () => {
+    navigator.serviceWorker
+      .register("./sw.js")
+      .then((reg) =>
+        console.log("Service Worker Registered Successfully!", reg),
+      )
+      .catch((err) => console.log("Service Worker Registration Failed!", err));
+  });
+}
