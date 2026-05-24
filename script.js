@@ -11,7 +11,7 @@ const addProcess = document.querySelector(".submit-btn");
 
 const list = document.querySelector("#list");
 
-let transactions = [];
+let transactions = JSON.parse(localStorage.getItem("transactions")) || [];
 let currentLang = "ar";
 
 const translations = {
@@ -105,6 +105,10 @@ document.getElementById("lang-btn").addEventListener("click", () => {
   changeLanguage(nextLang);
 });
 
+const updateLocalStorage = () => {
+  localStorage.setItem("transactions", JSON.stringify(transactions));
+}
+
 const gettingData = () => {
   let title = processTitle.value;
   let amount = Number(processAmount.value);
@@ -122,7 +126,7 @@ const gettingData = () => {
   };
 
   transactions.push(newTransaction);
-
+  updateLocalStorage();
   processTitle.value = "";
   processAmount.value = "";
 };
@@ -165,6 +169,7 @@ const displayTransactions = () => {
 
 const deleteTransaction = (id) => {
   transactions = transactions.filter((transaction) => transaction.id != id);
+  updateLocalStorage();
   displayTransactions();
 };
 
